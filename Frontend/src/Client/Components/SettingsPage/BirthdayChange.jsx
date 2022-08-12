@@ -1,20 +1,12 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
-import UnitsButton from "../SignupPage/UnitsButton";
+import { Box, Button } from "@mui/material";
 import DateInput from "../SignupPage/DateInput";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import { updateUser } from "../../lib/User";
 
-const BirthdayChange = ({ userID, currDOB }) => {
+const BirthdayChange = ({ currDOB }) => {
   const [inputErrors, setInputErrors] = useState(undefined);
   const [inputSuccess, setInputSuccess] = useState(undefined);
   const [dob, setDOB] = useState(currDOB);

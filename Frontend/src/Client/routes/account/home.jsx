@@ -1,26 +1,11 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { Link, Navigate } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
-import DailyGoalBox from "../../Components/ProfilePage/DailyGoalBox";
+import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Loading from "../../Components/Loading";
 import DailyHealthBox from "../../Components/ProfilePage/DailyHealthBox";
 import NotFound from "../NotFound";
-import { get } from "../../modules/req.js";
-import {
-  Box,
-  Button,
-  Collapse,
-  ListItemButton,
-  ListItemText,
-  TextField,
-} from "@mui/material";
-import HeightTextField from "../../Components/SignupPage/HeightTextField";
+import { Box, Button, Collapse } from "@mui/material";
 import { getDate } from "../../lib/Date.js";
-import { AxiosInstance } from "../../modules/req.js";
-
 import {
   getUser,
   updateDailyLog,
@@ -33,21 +18,6 @@ import { getDailyFoodLog } from "../../lib/daily_food_log";
 import { DailyMacroCharts } from "../../Components/HomePage/DailyMacroCharts";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { PageLoadingMinHeight } from "../../lib/Loading";
-
-let doFetch = (url, method = 'GET', body) => {
-  const headers = new Headers();
-  headers.append('Content-Type', 'application/json');
-  headers.append('Accept', 'application/json');
-  headers.append('Cache', 'no-cache');
-  const params = {
-    method, headers,
-    credentials: 'include' // The cookie must be sent!
-  }
-  if (body) {
-    params.body = body;
-  }
-  return fetch(url, params);
-};
 
 const Home = ({ token, setToken }) => {
   const [user, setUser] = useState(undefined);
@@ -87,8 +57,6 @@ const Home = ({ token, setToken }) => {
         console.log(err);
       });
 
-    doFetch()
-
     getHealthProfile(getDate(date))
       .then((data) => {
         setHealthProfileData(data);
@@ -96,6 +64,7 @@ const Home = ({ token, setToken }) => {
       .catch((err) => {
         console.log(err);
       });
+
     getDailyFoodLog(getDate(date))
       .then((foodsData) => {
         setFoods(foodsData);
@@ -110,6 +79,7 @@ const Home = ({ token, setToken }) => {
       .catch((err) => {
         console.log(err);
       });
+
   }, [date, refresh]);
 
   if (

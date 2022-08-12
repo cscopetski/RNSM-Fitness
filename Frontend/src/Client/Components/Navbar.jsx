@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import NavbarButton from "./NavbarButton";
 import { Outlet } from "react-router-dom";
-import Logo from "../Images/RNSM_Logo_White_Toolbar.png";
 
 function Navbar({ token }) {
   if (token === undefined) {

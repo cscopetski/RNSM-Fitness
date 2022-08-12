@@ -1,36 +1,23 @@
 import Box from "@mui/material/Box";
-import {
-  Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-} from "@mui/material";
-
+import { Button, TextField } from "@mui/material";
 import MacroTextInput from "./MacroTextInput";
 import React, { useState } from "react";
-import SelectionBox from "./SelectionBox";
 import UnitsSelectionInput from "./UnitsSelectionInput";
 import {
   calculateTotalCalories,
   editFood,
   getFood,
-  insertFood,
 } from "../../lib/Food";
-import SuccessFailureMessage from "../Success-FailureMessage";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Loading from "../Loading";
 
 function EditFoodBox({
   id,
-  handleClose = () => {},
-  setInputErrors = () => {},
-  setInputSuccess = () => {},
-  setErrorMessage = () => {},
-  setSuccessMessage = () => {},
+  handleClose = () => { },
+  setInputErrors = () => { },
+  setInputSuccess = () => { },
+  setErrorMessage = () => { },
+  setSuccessMessage = () => { },
 }) {
   const [food, setFood] = useState();
   const [protein, setProtein] = useState();

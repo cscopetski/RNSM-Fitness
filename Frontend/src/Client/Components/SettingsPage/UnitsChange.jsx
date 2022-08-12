@@ -1,19 +1,12 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import UnitsButton from "../SignupPage/UnitsButton";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import { updateUser } from "../../lib/User";
 
-const UnitsChange = ({ userID, currUnits }) => {
+const UnitsChange = ({ currUnits }) => {
   const [inputErrors, setInputErrors] = useState();
   const [inputSuccess, setInputSuccess] = useState(false);
   const [units, setUnits] = useState(currUnits);

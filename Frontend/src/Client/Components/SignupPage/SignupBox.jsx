@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
@@ -10,16 +8,6 @@ import IconButton from "@mui/material/IconButton";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import SignupCredentials from "../../models/signupCredentials.js";
-import {
-  FormControl,
-  FormControlLabel,
-  FormLabel,
-  MenuItem,
-  Radio,
-  RadioGroup,
-  Select,
-  Switch,
-} from "@mui/material";
 
 const ValidatePasswords = (Password, ConfirmPassword, cb) => {
   if (Password !== ConfirmPassword) {

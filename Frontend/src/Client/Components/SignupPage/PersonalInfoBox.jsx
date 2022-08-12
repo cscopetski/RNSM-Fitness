@@ -1,27 +1,23 @@
 import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import { Typography, TextField } from "@mui/material/";
-import Button from "@mui/material/Button";
+import { Typography } from "@mui/material/";
 import {
   FormControl,
   FormControlLabel,
-  FormLabel,
   Radio,
   RadioGroup,
 } from "@mui/material";
 import DateInput from "./DateInput";
 
 function PersonalInfoBox({
-  setGender = () => {},
-  setDOB = () => {},
-  setError = () => {},
+  setGender = () => { },
+  setDOB = () => { },
+  setError = () => { },
   currSex = "male",
   currBirthday = "",
 }) {
   const [date, setDate] = useState(currBirthday);
-  const [sex, setSex] = useState(currSex);
+
   const handleGender = (e) => {
     setGender(e.target.value);
   };

@@ -1,16 +1,13 @@
 import express from "express";
 import {
   deleteDailyFood,
-  getAllDailyFoodfromDailyFoodLogID,
   getAllDailyFoodfromUserIDandDate,
-  getDailyFoodByID,
   getDailyFoodMacrosByID,
   insertDailyFood,
   updateDailyFood,
 } from "../models/daily_foodDAO.js";
 import {
   getDailyFoodLogByUserIDandDate,
-  insertDailyFoodLog,
 } from "../models/daily_food_logDAO.js";
 
 const router = express.Router();

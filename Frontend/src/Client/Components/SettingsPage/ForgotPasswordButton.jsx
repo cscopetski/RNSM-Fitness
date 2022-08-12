@@ -1,18 +1,5 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
-import UnitsButton from "../SignupPage/UnitsButton";
-import DateInput from "../SignupPage/DateInput";
-import SuccessFailureMessage from "../Success-FailureMessage";
-import { updateUser } from "../../lib/User";
+import { Box, Button } from "@mui/material";
 import AddFoodDialog from "../DailyFoodLog/AddFoodDialog";
 import ForgotPasswordBox from "./ForgotPasswordBox";
 

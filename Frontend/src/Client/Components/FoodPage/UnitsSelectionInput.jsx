@@ -1,10 +1,6 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import React, { useState } from "react";
-import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
+import React from "react";
+import { InputAdornment, TextField } from "@mui/material";
 import { Box } from "@mui/system";
-import SelectionBox from "./SelectionBox";
 
 const UnitsSelectionInput = ({
   name = "",

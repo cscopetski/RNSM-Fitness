@@ -2,28 +2,15 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Navigate } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
 import {
   Button,
-  Collapse,
-  IconButton,
   List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
   TextField,
 } from "@mui/material";
-import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import React, { useState, useEffect } from "react";
-import FoodList from "../../Components/FoodPage/FoodList";
 import { Box } from "@mui/system";
-import FoodDisplay from "../../Components/FoodPage/FoodDisplay";
 import FoodListHeader from "../../Components/FoodPage/FoodListHeader";
 import DailyMeal from "../../Components/DailyFoodLog/DailyMeal";
-import DailyFoodListHeader from "../../Components/DailyFoodLog/DailyFoodListHeader";
 import { getDailyFoodLog } from "../../lib/daily_food_log";
 import { addDaysToDate, getDate } from "../../lib/Date";
 import Loading from "../../Components/Loading";

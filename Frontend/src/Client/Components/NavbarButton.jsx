@@ -2,10 +2,8 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { useTheme } from "@emotion/react";
 
 function NavbarButton(props) {
-  const theme = useTheme();
   const location = useLocation();
 
   return (
@@ -27,8 +25,8 @@ function NavbarButton(props) {
                 ? "text.primary"
                 : "primary.main"
               : location.pathname.includes(props.navTo)
-              ? "text.primary"
-              : "primary.main",
+                ? "text.primary"
+                : "primary.main",
         }}
       >
         {props.buttonText}

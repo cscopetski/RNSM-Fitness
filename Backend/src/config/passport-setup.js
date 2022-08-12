@@ -4,8 +4,6 @@ import LocalStrategy from 'passport-local';
 import { getUserByEmail, getUserByID } from "../models/userDAO.js";
 import { loginUser } from "../services/user/login.service.js";
 
-const environment_variables = process.env;
-
 export default function passportConfig() {
   passport.use(new LocalStrategy(
     {
@@ -26,8 +24,8 @@ export default function passportConfig() {
 
   passport.use("google", new GoogleStrategy(
     {
-      clientID: environment_variables.GOOGLE_CLIENT_ID,
-      clientSecret: environment_variables.GOOGLE_CLIENT_SECRET,
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL: "/auth/google/redirect",
       scope: ["profile", "email"],
       state: true,

@@ -1,8 +1,4 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import React, { useState } from "react";
-import { MenuItem, Select } from "@mui/material";
+import React from "react";
 import SelectionBox from "../FoodPage/SelectionBox";
 
 const MealSelector = ({ value = "Breakfast", setValue = () => { } }) => {

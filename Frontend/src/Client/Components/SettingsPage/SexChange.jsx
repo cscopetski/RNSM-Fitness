@@ -1,14 +1,12 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React, { useState } from "react";
 import { Box, Button } from "@mui/material";
-import DateInput from "../SignupPage/DateInput";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import SexInput from "../SignupPage/SexInput";
 import { updateUser } from "../../lib/User";
 
-const SexChange = ({ userID, currSex }) => {
+const SexChange = ({ currSex }) => {
   const [inputErrors, setInputErrors] = useState(undefined);
   const [inputSuccess, setInputSuccess] = useState(undefined);
   const [sex, setSex] = useState(currSex);

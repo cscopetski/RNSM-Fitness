@@ -1,13 +1,9 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { Navigate } from "react-router-dom";
-import { AxiosInstance } from "../modules/req.js";
-import React, { useEffect } from "react";
-import NotFound from "./NotFound";
+import React from "react";
 import { PageLoadingMinHeight } from "../lib/Loading";
 
-const Home = ({ token, setToken }) => {
+const Home = () => {
   return (
     <div>
       <main>

@@ -3,23 +3,6 @@ import { Navigate } from "react-router-dom";
 import Loading from "../../Components/Loading";
 import { AxiosInstance } from "../../modules/req.js";
 
-export async function logoutUser(url = "") {
-  const resp = await fetch(url, {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
-    credentials: "include",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "https://localhost:5000",
-    },
-  });
-
-  if (resp.status !== 200) {
-    throw new Error("Failed to logout");
-  }
-}
-
 const Logout = ({ setToken }) => {
   const [loggedOut, setLoggedOut] = useState(false);
 

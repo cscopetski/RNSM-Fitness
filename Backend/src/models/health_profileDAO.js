@@ -1,4 +1,3 @@
-import database from "../../knex/knex.js";
 import {
   deleteData,
   getAllData,
@@ -7,8 +6,6 @@ import {
   updateData,
 } from "./DAO.js";
 
-import bcrypt from "bcrypt";
-import knex from "knex";
 import { getUserByID } from "./userDAO.js";
 import { updateDailyLog } from "./daily_logDAO.js";
 import {

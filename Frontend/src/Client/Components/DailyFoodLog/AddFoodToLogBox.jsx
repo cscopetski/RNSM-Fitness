@@ -1,16 +1,10 @@
 import Box from "@mui/material/Box";
 import {
   Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
   TextField,
-  Typography,
 } from "@mui/material";
 
 import React, { useState } from "react";
-import SuccessFailureMessage from "../Success-FailureMessage";
 import MacroTextInput from "../FoodPage/MacroTextInput";
 import UnitsSelectionInput from "../FoodPage/UnitsSelectionInput";
 import { calculateTotalCalories } from "../../lib/Food";
@@ -22,11 +16,10 @@ function AddFoodToLogBox({
   food,
   input_meal = "Breakfast",
   date,
-  handleClose = () => {},
-  setInputErrors = () => {},
-  setInputSuccess = () => {},
-  setErrorMessage = () => {},
-  setSuccessMessage = () => {},
+  handleClose = () => { },
+  setInputErrors = () => { },
+  setInputSuccess = () => { },
+  setSuccessMessage = () => { },
 }) {
   const innerBorder = 0;
   const outerBorder = 0;

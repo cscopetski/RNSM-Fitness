@@ -1,11 +1,6 @@
 import Box from "@mui/material/Box";
 import {
   Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
   Typography,
 } from "@mui/material";
 
@@ -13,7 +8,7 @@ import React, { useState } from "react";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import FoodList from "../FoodPage/FoodList";
 
-function AddFoodLogBox({ handleClose = () => {}, meal, date }) {
+function AddFoodLogBox({ handleClose = () => { }, meal, date }) {
   const [selection, setSelection] = useState("hub");
   const [page, setPage] = useState();
   const [inputErrors, setInputErrors] = useState(false);

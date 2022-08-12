@@ -8,6 +8,9 @@ import { getUserByEmail } from "../../models/userDAO.js";
 import sendMail from "../mail.service.js";
 import { getTimestamp } from "../../libs/date.js";
 
+/*
+  This wont work in production!!! Make use of env variables instead
+*/
 const host = "localhost:3000";
 
 export async function changeEmail(id, newEmail) {

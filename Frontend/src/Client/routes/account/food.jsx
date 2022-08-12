@@ -1,12 +1,8 @@
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Navigate } from "react-router-dom";
-import { Box, CssBaseline } from "@mui/material";
-import FoodBox from "../../Components/FoodPage/CreateFoodBox";
-import ViewFoods from "../../Components/FoodPage/FoodList";
+import { Box } from "@mui/material";
 import FoodList from "../../Components/FoodPage/FoodList";
-import { getAllUserFoods } from "../../lib/Food";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { PageLoadingMinHeight } from "../../lib/Loading";
 
 const Food = ({ token }) => {

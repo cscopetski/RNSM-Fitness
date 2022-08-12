@@ -1,6 +1,5 @@
 import express from "express";
 import {
-  getAllUsers,
   getUserByID,
   updateUser,
 } from "../models/userDAO.js";

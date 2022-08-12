@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Button from '@mui/material/Button';
 import { Typography } from "@mui/material";
 import ProfileSettings from "./ProfileSettings.jsx";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ProfilePicture from "./ProfilePicture.jsx";
 import { convertDateToString } from '../../lib/Date.js';
 

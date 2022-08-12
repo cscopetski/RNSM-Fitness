@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 
 import { convertDateToString } from '../../lib/Date.js';
 
-
 function AboutMe({ description, dob, location }) {
     if (dob !== undefined) {
         dob = convertDateToString(dob);

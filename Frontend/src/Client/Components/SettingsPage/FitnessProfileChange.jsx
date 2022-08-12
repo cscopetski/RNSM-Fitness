@@ -1,21 +1,11 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import ActivityLevelBox from "../SignupPage/ActivityLevelBox";
-import HealthInfoBox from "../SignupPage/HealthInformationBox";
 import HeightTextField from "../SignupPage/HeightTextField";
 import WeightTextField from "../SignupPage/WeightTextField";
 import UnitsButton from "../SignupPage/UnitsButton";
-import PersonalInfoBox from "../SignupPage/PersonalInfoBox";
-import { getDate, getHealthProfile } from "../../routes/account/home";
 import WeightGoalBox from "../SignupPage/WeightGoalBox";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import { updateHealthProfile } from "../../lib/User";

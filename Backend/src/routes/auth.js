@@ -5,7 +5,6 @@ import { signupUser } from "../services/user/signup.service.js";
 
 const router = express.Router();
 
-
 // Login route, authenticates with passport local strategy
 router.post('/login',
   passport.authenticate('local', {
@@ -15,7 +14,6 @@ router.post('/login',
     return res.json(req.user);
   }
 );
-
 
 // Used to check if a user is logged in
 router.get("/login/success", (req, res) => {
@@ -29,7 +27,6 @@ router.get("/login/success", (req, res) => {
 
   return undefined;
 });
-
 
 // Login failed
 router.get("/login/failed", (req, res) => {

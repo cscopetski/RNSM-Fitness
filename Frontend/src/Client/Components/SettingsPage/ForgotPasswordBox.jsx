@@ -1,21 +1,9 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
-import UnitsButton from "../SignupPage/UnitsButton";
-import DateInput from "../SignupPage/DateInput";
-import SuccessFailureMessage from "../Success-FailureMessage";
-import { sendForgotPasswordEmail, updateUser } from "../../lib/User";
-import AddFoodDialog from "../DailyFoodLog/AddFoodDialog";
+import { Box, Button, TextField } from "@mui/material";
+import { sendForgotPasswordEmail } from "../../lib/User";
 
-const ForgotPasswordBox = ({ handleClose = () => {} }) => {
+const ForgotPasswordBox = ({ handleClose = () => { } }) => {
   const [emailError, setEmailError] = useState(false);
   const [inputSuccess, setInputSuccess] = useState(undefined);
 

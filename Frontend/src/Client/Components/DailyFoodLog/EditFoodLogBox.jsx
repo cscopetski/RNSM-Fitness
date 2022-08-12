@@ -1,33 +1,18 @@
 import Box from "@mui/material/Box";
-import {
-  Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-} from "@mui/material";
-
+import { Button, TextField } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import SuccessFailureMessage from "../Success-FailureMessage";
 import MacroTextInput from "../FoodPage/MacroTextInput";
 import UnitsSelectionInput from "../FoodPage/UnitsSelectionInput";
 import { calculateTotalCalories } from "../../lib/Food";
 import MealSelector from "./MealSelector";
-import {
-  addFoodtoDailyFoodLog,
-  editDailyFood,
-  getDailyFood,
-} from "../../lib/daily_food_log";
-import { getDate } from "../../lib/Date";
+import { editDailyFood, getDailyFood } from "../../lib/daily_food_log";
 import Loading from "../Loading";
 
 function EditFoodLogBox({
   food_id,
-  handleClose = () => {},
-  setInputErrors = () => {},
-  setInputSuccess = () => {},
+  handleClose = () => { },
+  setInputErrors = () => { },
+  setInputSuccess = () => { },
 }) {
   const innerBorder = 0;
   const outerBorder = 0;

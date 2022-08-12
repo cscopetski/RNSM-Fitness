@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import {
   FormControl,
   FormControlLabel,
-  FormLabel,
   Radio,
   RadioGroup,
 } from "@mui/material";
 
-function ActivityLevelBox({ setActivityLevel = () => {}, currActivityLevel }) {
+function ActivityLevelBox({ setActivityLevel = () => { }, currActivityLevel }) {
   const defaultVal = "0";
   const [activity, setActivity] = useState(currActivityLevel || defaultVal);
   const handleChange = (e) => {

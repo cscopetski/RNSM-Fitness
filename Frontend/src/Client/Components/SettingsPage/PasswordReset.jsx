@@ -1,5 +1,3 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import React, { useState } from "react";
 import {
@@ -11,7 +9,6 @@ import {
 } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import { Link } from "react-router-dom";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import { changePassword } from "../../lib/User";
 import ForgotPasswordButton from "./ForgotPasswordButton";

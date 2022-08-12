@@ -1,18 +1,18 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { Navigate, useParams } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
 import { Box } from "@mui/system";
 import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
-import { post } from "../../modules/req";
 import { PageLoadingMinHeight } from "../../lib/Loading";
 
-const ForgotPassword = ({ token }) => {
+const ForgotPassword = ({ }) => {
   const [emailError, setEmailError] = useState(false);
   const [inputSuccess, setInputSuccess] = useState(undefined);
 
+  /*
+    TODO: Use Axios instead
+      - Cannot use "localhost" in production mode, THIS WILL BREAK!!
+  */
   const sendForgotPasswordRequest = async (email) => {
     const resp = await fetch("http://localhost:5000/api/users/forgot", {
       method: "POST",

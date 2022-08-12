@@ -7,13 +7,11 @@ import NotFound from "../../routes/NotFound";
 import InternalServerError from "../../routes/InternalServerError";
 import ProfileHeader from "../../Components/ProfilePage/ProfileHeader.jsx";
 import AboutMe from "../../Components/ProfilePage/AboutMe.jsx";
-import Friends from "../../Components/ProfilePage/Friends.jsx";
-import ProfileSettings from "../../Components/ProfilePage/ProfileSettings.jsx";
 import { PageLoadingMinHeight } from "../../lib/Loading";
 import { getProfile } from "../../lib/User.js";
 
 const AccountProfile = ({ token }) => {
-  const [error, setError] = useState(undefined);
+  const [error] = useState(undefined);
   const [profile, setProfile] = useState(undefined);
 
   const { userId = "undefined" } = useParams();

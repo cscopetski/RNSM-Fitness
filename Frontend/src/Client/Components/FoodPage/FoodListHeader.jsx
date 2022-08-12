@@ -1,14 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import {
-  Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-} from "@mui/material";
 import FoodHeaderButton from "./FoodHeaderButton";
 
 function FoodListHeader({ changeSort, sort }) {

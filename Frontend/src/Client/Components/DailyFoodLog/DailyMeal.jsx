@@ -1,25 +1,15 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import React, { useState, useEffect } from "react";
-import { Button, IconButton, MenuItem, Select } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import {
   Collapse,
   List,
   ListItem,
-  ListItemButton,
-  ListItemIcon,
   ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
 } from "@mui/material";
-import { Add, Delete, Edit, ExpandLess, ExpandMore } from "@mui/icons-material";
-import FoodList from "../FoodPage/FoodList";
+import { Delete, Edit, ExpandLess, ExpandMore } from "@mui/icons-material";
 import { Box, useTheme } from "@mui/system";
 import FoodDisplay from "../FoodPage/FoodDisplay";
-import FoodListHeader from "../FoodPage/FoodListHeader";
 import { compare } from "../../lib/Food";
-import DailyFoodDisplay from "./DailyFoodDisplay";
 import AddFoodDialog from "./AddFoodDialog";
 import AddFoodLogBox from "./AddFoodLogBox";
 import { deleteDailyFood } from "../../lib/daily_food_log";

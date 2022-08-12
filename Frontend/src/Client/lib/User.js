@@ -2,12 +2,10 @@ import { getDate } from "./Date.js";
 import { axiosPost, axiosGet } from "../modules/req.js";
 
 export async function getUser() {
-  // If we try to get the user info form the db and the user doesnt exist return a 404
   return await axiosGet("api/users/get");
 }
 
 export async function getProfile(userId) {
-  // If we try to get the user info form the db and the user doesnt exist return a 404
   return await axiosGet("api/profiles/get/" + userId);
 }
 

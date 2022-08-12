@@ -1,25 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import {
-  FormControl,
-  FormControlLabel,
-  TextField,
-  InputLabel,
-  Select,
-  MenuItem,
-  FormLabel,
-  InputAdornment,
-  OutlinedInput,
-  Radio,
-  RadioGroup,
-  ToggleButtonGroup,
-  ToggleButton,
-} from "@mui/material";
-import { ConstructionOutlined } from "@mui/icons-material";
 import HeightTextField from "./HeightTextField";
 import WeightTextField from "./WeightTextField";
 import UnitsButton from "./UnitsButton";
@@ -29,20 +10,12 @@ function HealthInfoBox({
   setWeight,
   setSignupError,
   setGoalWeight,
-  setProfileUnits,
 }) {
   const [units, setUnits] = useState("imperial");
 
   const [heightError, setHeightError] = useState(true);
   const [weightError, setWeightError] = useState(true);
   const [goalWeightError, setGoalWeightError] = useState(true);
-
-  const handleUnits = (e) => {
-    if (e.target.value !== units) {
-      setUnits(e.target.value);
-    }
-    setProfileUnits(e.target.value);
-  };
 
   useEffect(() => {
     setSignupError(heightError || weightError || goalWeightError);

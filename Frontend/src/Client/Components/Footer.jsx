@@ -1,20 +1,9 @@
 import React from "react";
 import Container from "@mui/material/Container";
-import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import { Outlet } from "react-router-dom";
-
-
-
-/*
-<Grid>
-    <Grid item xs={12} sm={4}>
-        <Link>Contact Us</Link>
-    </Grid>
-</Grid>
-*/
 
 function Footer() {
     return (

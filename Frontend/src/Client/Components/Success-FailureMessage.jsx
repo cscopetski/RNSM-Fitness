@@ -1,16 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
-import { Alert, Box, Collapse, Typography } from "@mui/material";
+import { Alert, Box, Collapse } from "@mui/material";
 
 function SuccessFailureMessage({
   successMessage = "",
   failureMessage = "",
   success = false,
   failure = false,
-  setSuccess = () => {},
-  setFailure = () => {},
+  setSuccess = () => { },
+  setFailure = () => { },
 }) {
   return (
     <Box

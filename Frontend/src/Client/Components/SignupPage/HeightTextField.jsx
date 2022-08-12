@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import { InputAdornment, TextField, Typography } from "@mui/material";
+import { InputAdornment, TextField } from "@mui/material";
 
 function HeightTextField({
   units = "imperial",
-  setHeight = () => {},
-  setError = () => {},
+  setHeight = () => { },
+  setError = () => { },
   currHeight = "",
 }) {
   const minHeightFt = 0;

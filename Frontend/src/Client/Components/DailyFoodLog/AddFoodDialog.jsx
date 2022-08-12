@@ -1,23 +1,10 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
-  Box,
-  Button,
   Dialog,
-  DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
-  InputAdornment,
   Paper,
-  TextField,
 } from "@mui/material";
-import SuccessFailureMessage from "../Success-FailureMessage";
-import { getFood } from "../../lib/Food";
-import Loading from "../Loading";
-import AddFoodLogBox from "./AddFoodLogBox";
 import { useTheme } from "@mui/system";
 
 const AddFoodDialog = ({

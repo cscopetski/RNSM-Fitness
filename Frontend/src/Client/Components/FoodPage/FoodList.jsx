@@ -2,28 +2,20 @@ import Box from "@mui/material/Box";
 import {
   Button,
   IconButton,
-  Input,
   InputAdornment,
   List,
   ListItem,
   ListItemSecondaryAction,
-  MenuItem,
-  Select,
   TextField,
   Typography,
 } from "@mui/material";
-import MacroTextInput from "./MacroTextInput";
 import React, { useState, useEffect } from "react";
-import SelectionBox from "./SelectionBox";
-import UnitsSelectionInput from "./UnitsSelectionInput";
-import { compare, getAllUserFoods, insertFood } from "../../lib/Food";
+import { compare, getAllUserFoods } from "../../lib/Food";
 import SuccessFailureMessage from "../Success-FailureMessage";
 import FoodDisplay from "./FoodDisplay";
 import FoodListHeader from "./FoodListHeader";
 import Loading from "../Loading";
-import { Link, Navigate } from "react-router-dom";
-import { Add, Compare, CompareRounded, Edit } from "@mui/icons-material";
-import EditFoodDialog from "./EditFoodDialog";
+import { Add, Edit } from "@mui/icons-material";
 import AddFoodToLogBox from "../DailyFoodLog/AddFoodToLogBox";
 import AddFoodDialog from "../DailyFoodLog/AddFoodDialog";
 import FoodBox from "./CreateFoodBox";
@@ -32,9 +24,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import EditFoodBox from "./EditFoodBox";
 
 function FoodList({ token, foodList = true, input_meal = "Breakfast", date, inDialog = false }) {
-  const innerBorder = 3;
-  const outerBorder = 5;
-
   const [sortBy, setSortBy] = useState("name");
   const [ascending, setAscending] = useState(true);
   const [searchParam, setSearchParam] = useState("");

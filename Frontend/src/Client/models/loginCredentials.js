@@ -4,5 +4,3 @@ export default class LoginCredentials {
         this.password = password;
     }
 }
-
-// { username: "bob123", email: "bob@gmail.com", password: "12345" }

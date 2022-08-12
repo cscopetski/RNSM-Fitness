@@ -24,7 +24,6 @@ const store = new knexSession({
   knex: database,
 });
 
-
 // Helmet security
 app.use(helmet());
 
@@ -45,12 +44,11 @@ app.use(
 app.use(cookieParser("v6h23871rvh78123r801t71trv7"));
 
 // Use cookies and session tracking
-let secure = false;
 
+let secure = false;
 if (process.env.NODE_ENV === 'production') {
   secure = true;
 }
-
 
 app.use(
   session({
@@ -94,8 +92,6 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   server.listen(process.env.PORT, () => console.log("Server started on port " + process.env.PORT));
 }
-
-
 
 console.log("Running in a " + process.env.NODE_ENV + " environment");
 

@@ -1,21 +1,6 @@
 import React, { useState } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import {
-  Button,
-  FormControlLabel,
-  FormGroup,
-  Input,
-  LinearProgress,
-  Switch,
-  ToggleButton,
-  ToggleButtonGroup,
-  Typography,
-} from "@mui/material";
-import { maxHeight, maxWidth } from "@mui/system";
-import GoalBox from "./GoalBox";
-import CalorieProgressBar from "./CalorieProgressBar";
+import { Button, Typography } from "@mui/material";
 import SectionBox from "./SectionBox";
 import WeightTextField, { toLbs } from "../SignupPage/WeightTextField";
 import WeightDiffBox from "./WeightDiffBox";

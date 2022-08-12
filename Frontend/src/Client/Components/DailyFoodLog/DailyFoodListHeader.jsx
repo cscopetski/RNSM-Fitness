@@ -1,14 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import {
-  Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Button } from "@mui/material";
 
 function DailyFoodListHeader({ changeSort }) {
   return (

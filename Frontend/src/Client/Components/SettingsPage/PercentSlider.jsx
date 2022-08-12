@@ -1,9 +1,6 @@
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import { Slider, TextField, Typography } from "@mui/material";
-import { maxHeight, maxWidth } from "@mui/system";
-import React, { useState } from "react";
+import { Slider, Typography } from "@mui/material";
+import React from "react";
 
 function PercentSlider({ currPercent = 0, setPercent = () => { } }) {
   return (

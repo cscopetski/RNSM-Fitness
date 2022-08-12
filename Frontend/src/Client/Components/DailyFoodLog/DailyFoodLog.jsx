@@ -1,39 +1,10 @@
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import { Navigate } from "react-router-dom";
-import Navbar from "../Navbar";
-import {
-  Button,
-  Collapse,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
-  TextField,
-} from "@mui/material";
-import { ExpandLess, ExpandMore } from "@mui/icons-material";
-import React, { useState, useEffect } from "react";
-import FoodList from "../FoodPage/FoodList";
+import { List } from "@mui/material";
+import React, { useState } from "react";
 import { Box } from "@mui/system";
-import FoodDisplay from "../FoodPage/FoodDisplay";
 import FoodListHeader from "../FoodPage/FoodListHeader";
 import DailyMeal from "./DailyMeal";
-import DailyFoodListHeader from "./DailyFoodListHeader";
-import { getDailyFoodLog } from "../../lib/daily_food_log";
-import { addDaysToDate, getDate } from "../../lib/Date";
 import Loading from "../Loading";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
-import { CircularProgressWithLabel } from "../HomePage/CircularProgressWithLabel";
-import CalorieProgressBar from "../ProfilePage/CalorieProgressBar";
-import { DailyMacroCharts } from "../HomePage/DailyMacroCharts";
 
 const DailyFoodLog = ({ foods, date, reload = () => { } }) => {
   const [sortBy, setSortBy] = useState("name");

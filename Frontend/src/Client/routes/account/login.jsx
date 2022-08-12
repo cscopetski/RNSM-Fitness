@@ -1,13 +1,10 @@
 import LoginBox from "../../Components/LoginBox";
-import { Navigate } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
-import React, { useState, useEffect } from "react";
-import { post } from "../../modules/req.js";
+import React, { useState } from "react";
 import { AxiosInstance } from "../../modules/req.js";
 import Container from "@mui/material/Container";
 import { PageLoadingMinHeight } from "../../lib/Loading";
 
-function Login({ setToken, token }) {
+function Login({ setToken }) {
   const [loginError, setLoginError] = useState(false);
 
   const sendLoginRequest = (loginCredentials) => {
@@ -22,6 +19,9 @@ function Login({ setToken, token }) {
       });
   };
 
+  /*
+    TODO: Turn this into env variables so we dont need an if statement
+  */
   const loginWithGoogle = () => {
     if (process.env.NODE_ENV == "development") {
       window.open("http://localhost:5000/auth/google", "_self");

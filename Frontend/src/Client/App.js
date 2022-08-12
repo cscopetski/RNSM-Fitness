@@ -1,29 +1,24 @@
 import { useLocalStorage } from "./Hooks/useLocalStorage";
 import Login from "./routes/account/login";
 import Home from "./routes/Home";
-import { Routes, Route, Outlet, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Signup from "./routes/account/signup";
 import NotFound from "./routes/NotFound";
-import AccountFeed from "./routes/account/feed";
 import AccountHome from "./routes/account/home";
 import Logout from "./routes/account/logout";
 import Profile from "./routes/account/profile";
-import HealthSignup from "./Components/SignupPage/ActivityLevelBox";
 import Navbar from "./Components/Navbar";
 import ForgotPassword from "./routes/account/forgot-password";
 import ResetPassword from "./routes/account/reset";
 import AccountSettings from "./routes/account/settings";
 import VerifyEmail from "./routes/account/verify-email";
-import GoogleAuthRedirect from "./routes/GoogleAuthRedirect";
+import AuthRedirect from "./routes/AuthRedirect";
 import Food from "./routes/account/food";
-import DailyFood from "./routes/account/daily-food";
-import React, { useEffect } from "react";
-import { AxiosInstance } from "./modules/req.js";
+import React from "react";
 import { DarkTheme } from "./Themes/DarkTheme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Footer from "./Components/Footer";
 import axios from "axios";
-
 
 function App() {
   const [token, setToken] = useLocalStorage("token", undefined);
@@ -41,7 +36,7 @@ function App() {
                   element={<Home setToken={setToken} token={token} />}
                 />
 
-                <Route path="auth/redirect" element={<GoogleAuthRedirect setToken={setToken} token={token} />} />
+                <Route path="auth/redirect" element={<AuthRedirect setToken={setToken} token={token} />} />
 
                 <Route path="user/">
                   <Route
@@ -100,7 +95,7 @@ function App() {
                 element={<AccountHome token={token} setToken={setToken} />}
               />
 
-              <Route path="auth/redirect" element={<GoogleAuthRedirect setToken={setToken} token={token} />} />
+              <Route path="auth/redirect" element={<AuthRedirect setToken={setToken} token={token} />} />
 
               <Route path="account/">
                 <Route path="settings/">

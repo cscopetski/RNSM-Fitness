@@ -1,27 +1,21 @@
 import Box from "@mui/material/Box";
 import {
   Button,
-  Input,
-  InputAdornment,
-  MenuItem,
-  Select,
   TextField,
   Typography,
 } from "@mui/material";
 import MacroTextInput from "./MacroTextInput";
 import React, { useState } from "react";
-import SelectionBox from "./SelectionBox";
 import UnitsSelectionInput from "./UnitsSelectionInput";
 import { calculateTotalCalories, insertFood } from "../../lib/Food";
-import SuccessFailureMessage from "../Success-FailureMessage";
 
 function FoodBox({
   title = true,
-  handleClose = () => {},
-  setInputErrors = () => {},
-  setInputSuccess = () => {},
-  setErrorMessage = () => {},
-  setSuccessMessage = () => {},
+  handleClose = () => { },
+  setInputErrors = () => { },
+  setInputSuccess = () => { },
+  setErrorMessage = () => { },
+  setSuccessMessage = () => { },
 }) {
   const innerBorder = 0;
   const outerBorder = 0;

@@ -1,5 +1,3 @@
-import database from "../../knex/knex.js";
-import { getTimestamp } from "../libs/date.js";
 import {
   deleteData,
   getAllData,

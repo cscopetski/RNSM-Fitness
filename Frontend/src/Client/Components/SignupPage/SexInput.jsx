@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   FormControl,
   FormControlLabel,
@@ -6,7 +6,7 @@ import {
   Radio,
 } from "@mui/material";
 
-function SexInput({ setGender = () => {}, currSex = "male" }) {
+function SexInput({ setGender = () => { }, currSex = "male" }) {
   const [sex, setSex] = useState(currSex || "");
 
   const handleChange = (e) => {

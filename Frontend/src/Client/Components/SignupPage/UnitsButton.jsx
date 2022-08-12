@@ -1,27 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import React, { useState } from "react";
 import {
   FormControl,
-  FormControlLabel,
-  TextField,
-  InputLabel,
-  Select,
-  MenuItem,
-  FormLabel,
-  InputAdornment,
-  OutlinedInput,
-  Radio,
-  RadioGroup,
   ToggleButtonGroup,
   ToggleButton,
 } from "@mui/material";
-import { ConstructionOutlined } from "@mui/icons-material";
-import HeightTextField from "./HeightTextField";
-import WeightTextField from "./WeightTextField";
 
 function UnitsButton({ setParentUnits, currUnits = "imperial" }) {
   const [units, setUnits] = useState(currUnits);

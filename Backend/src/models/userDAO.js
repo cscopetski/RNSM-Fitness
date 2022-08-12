@@ -8,10 +8,7 @@ import {
   insertData,
   updateData,
 } from "./DAO.js";
-import {
-  getHealthProfileByID,
-  updateHealthProfile,
-} from "./health_profileDAO.js";
+import { updateHealthProfile } from "./health_profileDAO.js";
 
 const tableName = "user";
 const key = "id";

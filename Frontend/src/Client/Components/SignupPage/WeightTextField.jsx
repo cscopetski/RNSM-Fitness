@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import { InputAdornment, TextField, Typography } from "@mui/material";
 
@@ -16,8 +14,8 @@ export function toLbs(weight) {
 
 function WeightTextField({
   units = "imperial",
-  setWeight = () => {},
-  setError = () => {},
+  setWeight = () => { },
+  setError = () => { },
   currWeight = "",
 }) {
   const minWeightkg = 0;

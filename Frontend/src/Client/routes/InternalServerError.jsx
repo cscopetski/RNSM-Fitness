@@ -12,7 +12,7 @@ const InternalServerError = () => {
         <CssBaseline />
 
         <Typography variant="h1">500</Typography>
-        <Typography variant="h1">An internal server error has occured, WE'RE SORRY OH GOD WE'RE SORRY</Typography>
+        <Typography variant="h1">An internal server error has occured</Typography>
       </Container>
     </>
   );

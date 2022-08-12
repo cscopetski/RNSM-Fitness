@@ -2,7 +2,6 @@ import express from "express";
 import {
   deleteFood,
   getAllFood,
-  getAllFoodByUserID,
   getAllVisibleFoodByUserID,
   getFoodByID,
   insertFood,
