@@ -11,7 +11,7 @@
 </details>
 
 ## Summary
-[RNSM Fitness][website] is a fullstack fitness application that provides users the ability to track nutrition and diet progress. The initial version of the application was developed in an agile development environment over the course of eight 1 week sprints. The fullstack application consists of a ReactJS UI that makes requests to the NodeJS backend api to retrieve and update data from the databases and/or provide services to the users. Both the front and backend are hosted on an Ubuntu 22.04 VPS provided by Digital Ocean. 
+[RNSM Fitness][website] is a fullstack fitness application that provides users the ability to track nutrition and diet progress. The initial version of the application was developed in an agile development environment over the course of eight 1 week sprints. The fullstack application consists of a ReactJS UI that makes requests to the NodeJS backend API to retrieve and update data from the databases and/or provide services to the users. Both the front and backend are hosted on an Ubuntu 22.04 VPS provided by Digital Ocean. 
 
 The final database design diagram can be viewed [here][final-db-diagram]
 
