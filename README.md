@@ -1,5 +1,5 @@
-# RNSM-Fitness
-Check out the website [here][website]
+# RNSM-Fitness ([rnsm.fit][website])
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
